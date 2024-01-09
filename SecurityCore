@@ -1,0 +1,14 @@
+# security_core.py
+# Main security module for BankSafeNet
+
+class BankSecuritySystem:
+    def __init__(self):
+        self.firewall_enabled = True
+        self.encryption_standard = "AES-256"
+
+    def update_encryption(self, new_standard):
+        self.encryption_standard = new_standard
+        print(f"Encryption standard updated to {new_standard}")
+
+# Initialize the security system
+security_system = BankSecuritySystem()
